@@ -4,7 +4,8 @@ import pandas as pd
 
 # Cat.Ex
 def catex_order(url, pair='DASH/TRX'):
-	""" return a dataframe of the order book
+	""" return a dataframe of the order book,
+            containing columns exchange, pair, type, price, vol, timestamp.
 	"""
 
 	timestamp = int(time.time()*1000) # currrent timestamp
@@ -27,6 +28,7 @@ def catex_order(url, pair='DASH/TRX'):
 	res_dict = {
 	'exchange': 'Cat.Ex',
 	'pair': pair,
+	'type': ['ask']*100 + ['bid']*100,
 	'price': ask_price + bid_price,
 	'vol': ask_vol + bid_vol,
 	'timestamp': timestamp
