@@ -12,8 +12,18 @@ Nomics assign 7 types of transparency scores (A+,A,A-,B,C,D,F) to exchanges. The
 * 1-Hour Candles: 24 candles with last candle occurring within a rolling 2 hours
 * 1-Minute Candles: 60 candles with last candle occurring within a rolling 10 minutes
 
-One advantage of Nomics ratings is that these are not subjective. They check their database and exchange APIs to determine the qualitiy of data. Meanwhile, Nomics says they have never charged for exchange listings. However, I think it is possible that the data obtained by exchange APIs is fake although exchanges release all historical data. Thus, we need to analyze data further and compare data from different exchanges to draw our final conlusions.
+One advantage of Nomics ratings is that these are not subjective. They check their database and exchange APIs to determine the qualitiy of data. Meanwhile, Nomics says they have never charged for exchange listings. 
 
+However, I think it is possible that the data obtained by exchange APIs is fake although exchanges release all historical data because some exchanges may follow the trend of very big exchanges such as Binance to simulate fake data. 
 
+### Our Criterion 
+
+In addition to the transparency score from Nomics, our ratings will analyze the trade data further and consider aspects besides data itself to draw our final conlusions.
+
+* Alexa rank (more details at https://blog.alexa.com/marketing-research/alexa-rank/)
+Alexa rank is a measure of website popularity, and it ranks millions of websites in order of popularity. This is a good feature to detect exchanges that do fake volumes in order to be listed first in websites like coinmarketcap. For example, if we rank active market pairs for DASH, the first one is DASH/TRX, traded in Cat.Ex with a volume(24h) $103,717,243. However, its official website only ranks 72,293 in the global Internet traffic over past 90 days. In this sense, volume is a very misleading factor and Alexa rank can be used to detect if exchanges post fake voumes effectively.
+
+* Data consistency
+(build candle data from historical trade data, and to see if the candle data is consistent with the released ticker data)
 
 
