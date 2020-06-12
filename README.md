@@ -7,6 +7,6 @@ Use exchange API to get trading data of DASH
 
 ## Ranking top 10 exchanges trading DASH
 
-###daijiachun
-1.nomics 
- 1.advantages
+### daijiachun
+1. nomics 
+ 1. advantages
