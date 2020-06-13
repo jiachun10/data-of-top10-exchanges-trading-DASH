@@ -16,12 +16,32 @@ One advantage of Nomics ratings is that these are not subjective. They check the
 
 However, I think it is possible that the data obtained by exchange APIs is fake although exchanges release all historical data because some exchanges may follow the trend of very big exchanges such as Binance to simulate fake data. 
 
+### Bitwise
+
+#### What do suspicious exchanges look like?
+
+* Trade printing between bid and ask: 
+It takes CoinBene as example. The trade activity on its official website shows a perfectly alternating pattern of green and red trades. Furthermore, trades on CoinBene come in pairs, and each pair has one buy(green) and one offsetting sell(red) at the same time, and the size of these trades are always roughly equal in size, allowing them to nearly offset one-another over time.
+
+
 ### Our Criterion 
 
 In addition to the transparency score from Nomics, our ratings will analyze the trade data further and consider aspects besides data itself to draw our final conlusions.
 
 * Alexa rank (more details at https://blog.alexa.com/marketing-research/alexa-rank/)
+
 Alexa rank is a measure of website popularity, and it ranks millions of websites in order of popularity. This is a good feature to detect exchanges that do fake volumes in order to be listed first in websites like coinmarketcap. For example, if we rank active market pairs for DASH, the first one is DASH/TRX, traded in Cat.Ex with a volume(24h) $103,717,243. However, its official website only ranks 72,293 in the global Internet traffic over past 90 days. In this sense, volume is a very misleading factor and Alexa rank can be used to detect if exchanges post fake voumes effectively.
+
+* Bid-ask spread
+
+In the Bitwise report to SEC, it gave the CoinBene example as suspicous exchanges. CoinBene's average and peak spreads are unreasonable high, upwards of $100. This is only plausible in a thin market, which contradicts CoinBene's claim of high volume. Thus, we consider the spread/price into our model.
+
+* Abnormal volume
+Multiple hours (and days) with zero volume, or monotonic trading volume which is not sensitive to price movements.
+
+* Trade size histogram
+
+* Spread pattern
 
 * Data consistency
 (build candle data from historical trade data, and to see if the candle data is consistent with the released ticker data)
