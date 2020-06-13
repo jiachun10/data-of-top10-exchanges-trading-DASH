@@ -15,4 +15,7 @@ Use exchange API to get trading data of DASH
         1. don't mention does they proofread the historical or current data 
 2. summary of the evaluation
     1.  criterion 1: an exchange is considered to fail this criterion if more than 10% of its trades by volume did not appear on its order book prior or if we could identify its prints as time-delayed relays from other exchanges.
-    2.  criterion 2:   
+    2.  criterion 2: for each trade with price p and size x, checked the most recently-reported orderbook whether a) contained bids with totalling size>=x and averege price >=p, or offers with totalling size >=x and average price <=p. if neither the two conditions is met, it failed
+    3.  criterion 3: having set of reputable exchanges established(strict regulation):Coinbase, Poloniex, Bittrex, Gemini, Kraken, Bitstamp, and itBit. creating a time series by summing their volume up per unit of time, and calculate the correlation of other exchanges' volume by time.
+    if correlation>=0.5, it passes the criterion
+    4.  
