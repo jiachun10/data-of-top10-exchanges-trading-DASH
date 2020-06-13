@@ -20,5 +20,5 @@ Use exchange API to get trading data of DASH
     if correlation>=0.5, it passes the criterion
     4.  invest 500 millions usd(pass)
     5.  criterion 5: 
-        a).  for c1/c2 pairs, getting order book threshold σt at time t is the sum of the hourly
+        1.  for c1/c2 pairs, getting order book threshold σt at time t is the sum of the hourly
 standard deviations (in terms of USD) of c1 and c2.
