@@ -18,4 +18,7 @@ Use exchange API to get trading data of DASH
     2.  criterion 2: for each trade with price p and size x, checked the most recently-reported orderbook whether a) contained bids with totalling size>=x and averege price >=p, or offers with totalling size >=x and average price <=p. if neither the two conditions is met, it failed
     3.  criterion 3: having set of reputable exchanges established(strict regulation):Coinbase, Poloniex, Bittrex, Gemini, Kraken, Bitstamp, and itBit. creating a time series by summing their volume up per unit of time, and calculate the correlation of other exchanges' volume by time.
     if correlation>=0.5, it passes the criterion
-    4.  
+    4.  invest 500 millions usd(pass)
+    5.  criterion 5: 
+        a) for c1/c2 pairs, getting order book threshold σt at time t is the sum of the hourly
+standard deviations (in terms of USD) of c1 and c2.
