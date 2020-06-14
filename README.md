@@ -30,4 +30,3 @@ standard deviations (in terms of USD) of c1 and c2.
 on the order book with price within σt of the best bid and offer
         3.  order book ratio=order book depth/exchange's reported average daily volume for c1/c2
     6.  criterion 6: saying that having real c1/c2 market: if order book ratio>=10^(-6), if an exchange  has <= 5% fake market, then this exchange pass the criterion
-          
