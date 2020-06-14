@@ -21,7 +21,7 @@ others as well,which means that they don't make their data avaliable)
     (result: Note that the distribution is bimodal, with most exchanges either having close to 0 or close to all of their trades crossing the best bid or offer)
     3.  criterion 3: having set of reputable exchanges established(strict regulation):Coinbase, Poloniex, Bittrex, Gemini, Kraken, Bitstamp, and itBit(**we need to choose our own index for dash market**). creating a time series by summing their volume up per unit of time, and calculate the correlation of other exchanges' volume by time.
     if correlation>=0.5, it passes the criterion.
-    ![compare](Screen Shot 2020-06-13 at 8.19.47 PM copy.png)
+    ![alt text](https://github.com/jiachun10/data-of-top10-exchanges-trading-DASH/blob/master/Screen%20Shot%202020-06-13%20at%208.19.47%20PM%20copy.png)
     4.  invest 500 millions usd(pass)
     5.  criterion 5: if *order book ratio*>=0.005 pass the criterion
         1.  for c1/c2 pairs, getting order book threshold σt at time t is the sum of the hourly
